@@ -1,0 +1,37 @@
+{% load static %}
+<header class="main-header-container">
+    <div class="main-header">
+        <div class="social-icons">
+            <a href='https://github.com/andrefonseca99' target="_blank">
+                <img src="{% static 'global/img/github-icon.png' %}" alt="github-icon">
+            </a>
+            <a href='//wa.me/5531993434201' target="_blank">
+                <img src="{% static 'global/img/wpp-icon.png' %}" alt="wpp-icon">
+            </a>
+            <a href='//mailto:andrepfonseca19@gmail.com' target="_blank">
+                <img src="{% static 'global/img/email-icon.png' %}" alt="email-icon">
+            </a>
+            <a href='https://www.linkedin.com/in/andrepereirafonseca/' target="_blank">
+                <img src="{% static 'global/img/linkedin-icon.png' %}" alt="linkedin-icon">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <button
+            class="btn-menu" 
+            aria-label="Open Menu" 
+            aria-haspopup="true" 
+            aria-controls="menu" 
+            aria-expanded="false"
+            >
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu" id="menu" role="menu">
+                <li><a href="/">home</a></li>
+                <li><a href="/about-me/">about me</a></li>
+                <li><a href="/">my work</a></li>
+                <li><a href="/">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
