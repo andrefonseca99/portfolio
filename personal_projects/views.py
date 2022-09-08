@@ -7,3 +7,6 @@ def home(request):
 
 def about(request):
     return render(request, 'personal_projects/pages/about.html')
+
+def work(request):
+    return render(request, 'personal_projects/pages/work.html')
