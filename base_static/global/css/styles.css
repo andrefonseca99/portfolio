@@ -261,6 +261,48 @@ a {
     text-align: center;
 }
 
+.title-container {
+    width: 95vw;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    width: 95%;
+    height: 30rem;
+    margin: 2.5%;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 5px var(--color-primary-light-blue);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.project-img {
+    margin: 2.5rem;
+    width: 40rem;
+    height: 25rem;
+    background: red;
+}
+
+.project-desc {
+    margin: 2.5rem;
+    width: 95%;
+    height: 25rem;
+}
+.project-desc h1 {
+    font-family: Impact;
+    font-size: 4rem;
+    letter-spacing: .1rem;
+    color: var(--color-primary-white)
+}
+.project-desc h2 {
+    font-family: Impact;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+}
+
 @supports(-webkit-overflow-scrolling: touch){
     .hero-inner {
         clip: unset;
@@ -308,7 +350,7 @@ a {
     .menu {
         display: block;
         position: absolute;
-        top: 10rem;
+        top: 5rem;
         left: 0;
         background: var(--color-primary-dark);
         text-align: center;
