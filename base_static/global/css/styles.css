@@ -3,6 +3,7 @@
     --color-primary-pink: #cc00c5;
     --color-primary-light-blue: #0086cc;
     --color-primary-dark-hover: #082c3f;
+    --color-primary-pink-hover: #f9b5f7ec;
     --color-primary-dark: #0000ff;
 
     --font-primary: sans-serif;
@@ -50,10 +51,6 @@ body {
     font-family: var(--font-primary);
     color: white;
     background: var(--color-primary-dark);
- /*   background-image: url("../img/home.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top; */
 }
 
 h1,
@@ -90,7 +87,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     margin: 0rem auto;
     padding: 1rem;
 }
@@ -163,6 +160,7 @@ a {
     align-items: center;
     justify-content: center;
     align-content: flex-start;
+    max-width: 100%;
 }
 
 .text {
@@ -176,12 +174,16 @@ a {
 
 .computer {
     display: flex;
-    padding: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    max-width: 100%;
 }
 
 .computer img {
-    max-width: 40rem;
     max-height: 40rem;
+    max-width: 100%;
 }
 
 .computer img {
@@ -262,11 +264,16 @@ a {
 }
 
 .title-container {
-    width: 95vw;
-    height: 15rem;
+    width: 100%;
+    height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title-container h1 {
+    font-family: var(--font-headings);
+    font-size: 6rem;
 }
 
 .project-container {
@@ -274,7 +281,7 @@ a {
     height: 30rem;
     margin: 2.5%;
     border-radius: 2rem;
-    box-shadow: 0 0 0 5px var(--color-primary-light-blue);
+    box-shadow: 0 0 0 5px transparent;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -283,7 +290,11 @@ a {
     margin: 2.5rem;
     width: 40rem;
     height: 25rem;
-    background: red;
+}
+.project-img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .project-desc {
@@ -291,16 +302,42 @@ a {
     width: 95%;
     height: 25rem;
 }
-.project-desc h1 {
-    font-family: Impact;
-    font-size: 4rem;
+.project-desc h1,
+.project-desc h2,
+.project-desc h3,
+.project-desc h4 {
+    font-family: var(--font-headings);
     letter-spacing: .1rem;
-    color: var(--color-primary-white)
 }
+
+.project-desc h1 {
+    font-size: 4rem;
+    color: var(--color-primary-white);
+}
+
 .project-desc h2 {
-    font-family: Impact;
-    letter-spacing: .1rem;
     font-size: 3rem;
+}
+
+.project-desc a {
+    font-size: 2rem;
+    color: var(--color-primary-pink);
+    font-weight: bold;
+}
+
+.project-desc a:hover {
+    color: var(--color-primary-pink-hover);
+}
+
+.project-links {
+    margin-top: .5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.project-links a img{
+    max-height: 2rem;
+    max-width: 2rem;
 }
 
 @supports(-webkit-overflow-scrolling: touch){
