@@ -10,3 +10,6 @@ def about(request):
 
 def work(request):
     return render(request, 'personal_projects/pages/work.html')
+
+def contact(request):
+    return render(request, 'personal_projects/pages/contact.html')

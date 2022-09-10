@@ -1,0 +1,52 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block title %}Contact |{% endblock title %}
+
+{% block content %}
+<div class="contact-container">
+
+    <div class="personal-image">
+        <div class="my-image">
+            <img src="{% static 'global/img/profile-image.png' %}" alt="computer-image">
+        </div>        
+    </div>
+
+    <div class="contact-info">
+        <div class="contact-text">
+            <h1>Contact me</h1>
+            <div class="contact-links">
+                <div class="info">
+                    <a href='https://github.com/andrefonseca99' target="_blank">
+                        <img src="{% static 'global/img/github-icon.png' %}" alt="github-icon">
+                    </a>
+                    <h3>github.com/andrefonseca99</h3>
+                </div>
+
+                <div class="info">
+                    <a href='//wa.me/5531993434201' target="_blank">
+                        <img src="{% static 'global/img/wpp-icon.png' %}" alt="wpp-icon">
+                    </a>
+                    <h3>+55 31 993434201</h3>
+                </div>
+
+                <div class="info">
+                    <a href='//mailto:andrepfonseca19@gmail.com' target="_blank">
+                        <img src="{% static 'global/img/email-icon.png' %}" alt="email-icon">
+                    </a>
+                    <h3>andrepfonseca19@gmail.com</h3>
+                </div>
+
+                <div class="info">
+                    <a href='https://www.linkedin.com/in/andrepereirafonseca/' target="_blank">
+                        <img src="{% static 'global/img/linkedin-icon.png' %}" alt="linkedin-icon">
+                    </a>
+                    <h3>linkedin.com/andrepereirafonseca</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
