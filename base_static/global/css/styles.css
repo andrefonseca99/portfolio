@@ -343,47 +343,55 @@ a {
 /* Contact */
 
 .contact-container {
-    background: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 90vh;
+    height: 90vh;
 }
 
-.contact-text {
-    padding: 1rem;
+.personal-image {
+    max-width: 60rem;
+    max-height: 90vh;
+    margin: auto;
 }
 
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 100%;
+.my-image {
+    max-width: 60rem;
+    max-height: 90vh;
 }
 
-.contact-info h3 {
-    color: var(--color-primary-white);
+.my-image img {
+    max-width: 50rem;
+    max-height: 50rem;
 }
 
 .contact-info {
-    padding: 15rem;
-}
-
-.info {
     display: flex;
-    padding: 1rem;
-    gap: .8rem;
     align-items: center;
     justify-content: center;
 }
 
-.info img {
-    max-width: 3.2rem;
-    max-height: 3.2rem;
+.contact-text,
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.personal-image {
-    background: green;
+.contact-text h1,
+.contact-text h3 {
+    font-family: var(--font-headings);
+    color: var(--color-primary-white);
+}
+
+.info a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info img {
+    max-width: 4rem;
+    max-height: 4rem;
 }
 
 @supports(-webkit-overflow-scrolling: touch){
@@ -424,6 +432,13 @@ a {
         display: flex;
         align-content: center;
         justify-content: center;
+    }
+    .personal-image,
+    .contact-info {
+        padding: 1rem;
+    }
+    .contact-info h1 {
+        font-size: 6rem;
     }
 }
 
@@ -498,4 +513,9 @@ a {
         top: -0.7rem;
     }
 
+    .contact-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
 }
