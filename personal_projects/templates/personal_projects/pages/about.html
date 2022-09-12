@@ -4,40 +4,39 @@
 {% block title %}About me |{% endblock title %}
 
 {% block content %}
-
-<div class="arrow"></div>
-
-<section class="hero">   
-    <div class="hero-inner" id="section-0">
-        <figure></figure>
-        <div class="descricao">
-            <h1 class="hero__title">Student of Materials Engineering at CEFET-MG, Brazil</h1>
+<div class="page-container">
+    <section class="page">   
+        <div class="grid-container">
+            <div class="descricao">
+                <h1>Student of Materials Engineering at CEFET-MG, Brazil</h1>
+            </div>
+            <div class="imagem-descricao">
+                <img src="{% static 'global/img/engineer.png' %}" alt="engineer">
+            </div> 
         </div>
-        <div class="imagem-descricao">
-            <img src="{% static 'global/img/engineer.png' %}" alt="engineer">
-        </div> 
-    </div>
-</section>
-<section class="hero">
-    <div class="hero-inner" id="section-0">
-        <figure></figure>
-        <div class="descricao">
-            <h1 class="hero__title">Started learning Python in the beginning of 2022</h1>
+    </section>
+
+    <section class="page">   
+        <div class="grid-container">
+            <div class="descricao">
+                <h1>Started learning Python in the beginning of 2022</h1>
+            </div>
+            <div class="imagem-descricao">
+                <img src="{% static 'global/img/pythonb.png' %}" alt="engineer">
+            </div> 
         </div>
-        <div class="imagem-descricao">
-            <img src="{% static 'global/img/pythonb.png' %}" alt="pythonb">
-        </div> 
-    </div>
-</section>
-<section class="hero"><div class="hero-inner" id="section-0">
-    <figure></figure>
-    <div class="descricao">
-        <h1 class="hero__title">After some projects, I`m now willing to learn mobile development</h1>
-    </div>
-    <div class="imagem-descricao">
-        <img src="{% static 'global/img/iphone.png' %}" alt="iphone">
-    </div> 
+    </section>
+
+    <section class="page">   
+        <div class="grid-container">
+            <div class="descricao">
+                <h1>After some projects, I`m now willing to learn mobile development</h1>
+            </div>
+            <div class="imagem-descricao">
+                <img src="{% static 'global/img/iphone.png' %}" alt="engineer">
+            </div> 
+        </div>
+    </section>
 </div>
-</section>
 
 {% endblock content %}
