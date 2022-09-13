@@ -199,11 +199,12 @@ a {
     overflow-y: scroll;
 }
 
+
 .page-container section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     scroll-snap-align: start;
 }
@@ -219,6 +220,7 @@ a {
     justify-content: center;
     padding: 4rem;
     text-align: center;
+    max-width: 100%;
 }
 
 .descricao h1 {
@@ -227,6 +229,8 @@ a {
 }
 
 .imagem-descricao img {
+    max-height: 100%;
+    max-width: 90%;
     animation: flutuacao 3s ease-in-out infinite;
 }
 
@@ -325,6 +329,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 90vh;
+    max-width: 90vw;
 }
 
 .personal-image {
@@ -517,6 +522,11 @@ a {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    .imagem-descricao,
+    .descricao {
+        max-height: 50vh;
+    }
     
 }
 
@@ -547,5 +557,9 @@ a {
 
     .project-img  img {
         max-width: 65vw;
+    }
+    
+    .descricao h1 {
+        font-size: 3.2rem;
     }
 }
