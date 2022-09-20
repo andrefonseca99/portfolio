@@ -367,7 +367,7 @@ a {
 }
 
 .my-image img {
-    max-width: 50rem;
+    max-width: 90vw;
     max-height: 50rem;
 }
 
