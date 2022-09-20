@@ -433,6 +433,13 @@ a {
         align-content: flex-start;
         padding: 2rem;
         gap: .1rem;
+        max-width: 100vw;
+    }
+
+    .text h1,
+    .text h2,
+    .text h3 {
+    font-family: var(--font-headings);
     }
 
     .computer {
@@ -548,11 +555,10 @@ a {
     .imagem-descricao,
     .descricao {
         max-height: 50vh;
-    }
-
-    .descricao {
         padding-top: .5rem;
     }
+
+
 
     .project-desc h1 {
         font-size: 3.5rem;
