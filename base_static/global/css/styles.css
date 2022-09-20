@@ -150,7 +150,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    max-width: 100%;
     height: calc(100vh - 10rem);
 }
 
@@ -424,7 +424,6 @@ a {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        width: 100%;
         height: calc(100vh - 10rem);
     }
 
@@ -549,6 +548,10 @@ a {
     .imagem-descricao,
     .descricao {
         max-height: 50vh;
+    }
+
+    .descricao {
+        padding-top: .5rem;
     }
 
     .project-desc h1 {
