@@ -10,11 +10,6 @@
     --font-headings: 'Roboto Slab', serif;
 }
 
-@font-face {
-    font-family: PeaceSans;
-    src: url("../fonts/PeaceSans.otf");
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -51,16 +46,6 @@ body {
     font-family: var(--font-primary);
     color: white;
     background: var(--color-primary-dark);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'PeaceSans';
-    font-weight: bolder;    
 }
 
 h1 {
@@ -234,11 +219,14 @@ a {
 .descricao,
 .imagem-descricao {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 4rem;
     text-align: center;
     max-width: 100%;
+}
+
+.descricao {
+    margin-top: 3rem;
 }
 
 .descricao h1 {
@@ -247,6 +235,7 @@ a {
 }
 
 .imagem-descricao img {
+    align-items: center;
     max-height: 100%;
     max-width: 90%;
     animation: flutuacao 3s ease-in-out infinite;
