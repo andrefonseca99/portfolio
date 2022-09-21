@@ -219,19 +219,13 @@ a {
 .descricao,
 .imagem-descricao {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 4rem;
     text-align: center;
     max-width: 100%;
 }
 
-.imagem-descricao {
-    align-items: center;
-}
-
-.descricao {
-    margin-top: 3rem;
-}
 
 .descricao h1 {
     font-family: var(--font-primary);
@@ -545,6 +539,10 @@ a {
         padding-top: .5rem;
     }
 
+    .descricao {
+        align-items: unset;
+        margin-top: 3rem;
+    }
 
 
     .project-desc h1 {
