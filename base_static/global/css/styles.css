@@ -49,7 +49,7 @@ body {
 }
 
 h1 {
-    font-family: Impact;
+    font-family: fantasy;
     font-size: 9rem;
     color: var(--color-primary-white)
 }
@@ -558,7 +558,9 @@ a {
 @media only screen and (max-width: 450px) {
     .title-container h1 {
         font-size: 3rem;
+        padding-bottom: 3rem;
     }
+
     .project-desc h1 {
         font-size: 2.5rem;
     }
@@ -593,6 +595,6 @@ a {
     }
     
     h1 {
-        font-size: 6rem;
+        font-size: 7rem;
     }
 }
