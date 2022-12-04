@@ -45,7 +45,13 @@ body {
     font-size: 1.6rem;
     font-family: var(--font-primary);
     color: white;
-    background: var(--color-primary-dark);
+    background: rgb(29,120,223);
+    background: radial-gradient(
+        circle,
+        rgba(29,120,223,1) 9%,
+        rgba(2,0,36,1) 100%,
+        rgba(0,212,255,1) 100%
+    );
 }
 
 h1 {
@@ -59,7 +65,6 @@ h2 {
 }
 h3 {
     font-size: 1.9rem;
-    color: var(--color-primary-light-blue)
 }
 
 a {
@@ -117,10 +122,6 @@ a {
 
 .menu a:hover::before {
     color: var(--color-primary-pink);
-}
-
-.menu a:hover {
-    background: blue;
 }
 
 .btn-menu {
@@ -305,6 +306,7 @@ a {
 
 .project-desc h3,
 .project-desc h4 {
+    color: var(--color-primary-white);
     font-size: 2rem;
 }
 
@@ -460,7 +462,13 @@ a {
         position: absolute;
         top: 5rem;
         left: 0;
-        background: var(--color-primary-dark);
+        background: rgb(29,120,223);
+        background: radial-gradient(
+            circle,
+            rgba(29,120,223,1) 9%,
+            rgba(2,0,36,1) 100%,
+            rgba(0,212,255,1) 100%
+        );
         text-align: center;
         width: 100%;
         height: 0;
